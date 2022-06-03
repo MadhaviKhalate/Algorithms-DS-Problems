@@ -6,7 +6,7 @@ namespace AlgorithmPrograms
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("1.Calculate Permutations \n2.Binary Search \n3.Insertion Sort");
+            Console.WriteLine("1.Calculate Permutations \n2.Binary Search \n3.Insertion Sort \n4.Bubble Sort");
             Console.WriteLine("Enter your option:");
             int option = Convert.ToInt32(Console.ReadLine());
            
@@ -32,6 +32,11 @@ namespace AlgorithmPrograms
                     InsertionSort.displayArrays(arr, size);
                     break;
 
+                case 4:
+                    string[] array = { "Madhavi", "I", "am" };
+                    BubbleSort.BubbleSortMethod(array);
+                    break;
+        
                 default:
                     Console.WriteLine("Option is not valid.");
                     break;
