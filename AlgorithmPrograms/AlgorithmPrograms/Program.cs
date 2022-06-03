@@ -6,7 +6,7 @@ namespace AlgorithmPrograms
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("1.calculate Permutations \n2.Insertion Sort");
+            Console.WriteLine("1.Calculate Permutations \n2.Binary Search \n3.Insertion Sort");
             Console.WriteLine("Enter your option:");
             int option = Convert.ToInt32(Console.ReadLine());
            
@@ -17,11 +17,23 @@ namespace AlgorithmPrograms
                     int n = str.Length;
                     Permutations.permute(str, 0, n - 1);
                     break;
+
                 case 2:
+                    BinarySearchClass binarySearch = new BinarySearchClass();
+                    Console.WriteLine("Enter Word to Find Out:");
+                    string str1 = Console.ReadLine();
+                    binarySearch.searchMethod(str1);
+                    break;
+
+                case 3:
                     string[] arr = { "Madhavi", "I", "am" };
                     int size = arr.Length;
                     InsertionSort.sorting(arr, size);
                     InsertionSort.displayArrays(arr, size);
+                    break;
+
+                default:
+                    Console.WriteLine("Option is not valid.");
                     break;
             }
         }
