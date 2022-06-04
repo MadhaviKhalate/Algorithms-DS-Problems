@@ -6,7 +6,8 @@ namespace AlgorithmPrograms
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("1.Calculate Permutations \n2.Binary Search \n3.Insertion Sort \n4.Bubble Sort");
+            Console.WriteLine("1.Calculate Permutations \n2.Binary Search \n3.Insertion Sort " +
+                "\n4.Bubble Sort \n5. Anagram Detector");
             Console.WriteLine("Enter your option:");
             int option = Convert.ToInt32(Console.ReadLine());
            
@@ -36,7 +37,12 @@ namespace AlgorithmPrograms
                     string[] array = { "Madhavi", "I", "am" };
                     BubbleSort.BubbleSortMethod(array);
                     break;
-        
+
+                case 5:
+                    AnagramDetector detect = new AnagramDetector();
+                    detect.AnagramDetectMethod();
+                    break;
+
                 default:
                     Console.WriteLine("Option is not valid.");
                     break;
