@@ -7,7 +7,7 @@ namespace AlgorithmPrograms
         public static void Main(string[] args)
         {
             Console.WriteLine("1.Calculate Permutations \n2.Binary Search \n3.Insertion Sort " +
-                "\n4.Bubble Sort \n5. Anagram Detector \n6.Merge Sort");
+                "\n4.Bubble Sort \n5.Anagram Detector \n6.Merge Sort \n7.UnorderedList");
             Console.WriteLine("Enter your option:");
             int option = Convert.ToInt32(Console.ReadLine());
            
@@ -51,6 +51,13 @@ namespace AlgorithmPrograms
                     Console.WriteLine("\nElements After Sorting");
                     getMethod.sort(numArray, 0, numArray.Length - 1);
                     getMethod.display(numArray);
+                    break;
+
+                case 7:
+                    Console.WriteLine("Enter word to search:");
+                    string w = Console.ReadLine();
+                    UnorderListClass unorderListClass = new UnorderListClass();
+                    unorderListClass.UnOrdered(w);
                     break;
 
                 default:
