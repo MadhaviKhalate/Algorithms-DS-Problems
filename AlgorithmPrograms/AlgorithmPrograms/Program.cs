@@ -7,7 +7,7 @@ namespace AlgorithmPrograms
         public static void Main(string[] args)
         {
             Console.WriteLine("1.Calculate Permutations \n2.Binary Search \n3.Insertion Sort " +
-                "\n4.Bubble Sort \n5.Anagram Detector \n6.Merge Sort \n7.Unordered List \n8.Ordered List");
+                "\n4.Bubble Sort \n5.Anagram Detector \n6.Merge Sort \n7.Unordered List \n8.Ordered List \n9.BalancedParantheses");
             Console.WriteLine("Enter your option:");
             int option = Convert.ToInt32(Console.ReadLine());
            
@@ -65,6 +65,13 @@ namespace AlgorithmPrograms
                     string s = Console.ReadLine();
                     OrderedList orderList = new OrderedList();
                     orderList.Ordered(s);
+                    break;
+
+                case 9:
+                    Console.WriteLine("Enter Expression:");
+                    string exp = Console.ReadLine();
+                    BalancedParentheses balancedParentheses = new BalancedParentheses();
+                    balancedParentheses.BalancedParantheses(exp);
                     break;
 
                 default:
